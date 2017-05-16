@@ -12,6 +12,7 @@ image            | description                               | size   | metrics 
 Same packages from TidyViz image are installed here to keep sharing data easily. 
 Follow procedures to share volumes between Docker containers for a proper workflow: programming in Tidyviz and sharing via tidyviz-shiny
 
+
 ## Usage:
 
 Run container with:
