@@ -14,8 +14,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libgsl0-dev \
   && . /etc/environment
  
-RUN install2.r addinslist \
-Amelia \
+RUN install2.r Amelia \
 anytime \
 assertive \
 assertr \
@@ -79,7 +78,6 @@ rmarkdown \
 rmdformats \
 rticles \
 scatterplot3d \
-shinyjs \
 stringdist \
 summarytools \
 tester \
@@ -122,7 +120,6 @@ randomForest \
 RcppEigen \
 RcppQuantuccia \
 RCurl \
-RDocumentation \
 rgdal \
 rms \
 rpg \
