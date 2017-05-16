@@ -9,10 +9,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libmariadb-client-lgpl-dev \
   libpq-dev \
   libudunits2-dev \
-  libgdal1-dev \
   libproj-dev \
-  openjdk-7-jre \
-  openjdk-7-jdk \
   libv8-3.14-dev \
   libgsl0-dev \
   && . /etc/environment
