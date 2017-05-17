@@ -14,7 +14,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libgsl0-dev \
   && . /etc/environment
  
-RUN install2.r Amelia \
+RUN install2.r addinslist \
+Amelia \
 anytime \
 assertive \
 assertr \
@@ -29,7 +30,6 @@ data.table \
 desctable \
 diffobj \
 DT \
-errors \
 filesstrings \
 flexdashboard \
 formatR \
@@ -56,7 +56,6 @@ httpuv \
 huxtable \
 igraph \
 janitor \
-knitr \
 leaflet \
 leaps \
 lmtest \
@@ -74,7 +73,6 @@ RColorBrewer \
 Rcpp \
 rio \
 riverplot \
-rmarkdown \
 rmdformats \
 rticles \
 scatterplot3d \
@@ -92,13 +90,8 @@ validate \
 viridis \
 VIM \
 wordcloud \
-arules \
-arulesViz \
-BTYD \
-BTYDplus \
 choroplethr \
 choroplethrMaps \
-cranlogs \
 DiagrammeR \
 dummies \
 e1071 \
@@ -117,7 +110,6 @@ nloptr \
 party \
 progress \
 randomForest \
-RcppEigen \
 RcppQuantuccia \
 RCurl \
 rgdal \
