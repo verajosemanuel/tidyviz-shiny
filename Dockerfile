@@ -16,6 +16,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
  
 RUN install2.r addinslist \
 Amelia \
+animation \
 anytime \
 assertive \
 assertr \
@@ -28,6 +29,7 @@ colorspace \
 corrplot \
 data.table \
 desctable \
+devtools \
 diffobj \
 DT \
 filesstrings \
@@ -35,8 +37,10 @@ flexdashboard \
 formatR \
 formattable \
 gbm \
+gganimate \
 GGally \
 ggbeeswarm \
+ggforce \
 ggfortify \
 ggiraph \
 ggraph \
@@ -49,6 +53,7 @@ glue \
 gmodels \
 gpclib \
 gridExtra \
+gtable \
 highcharter \
 Hmisc \
 htmlwidgets \
@@ -63,6 +68,7 @@ magrittr \
 microbenchmark \
 NMF \
 pathological \
+pdftools \
 plotly \
 plotrr \
 prettydoc \
@@ -122,8 +128,7 @@ tseries \
 XML \
 xts \
 zoo  
-
-RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","drsimonj/twidlr","dyerlab/popgraph","houstonusers/pipefittr","swarm-lab/editR","ropensci/tabulizerjars","ropensci/tabulizer","ThinkRstat/littleboxes","thomasp85/lime"))'
+RUN Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","drsimonj/twidlr","dyerlab/popgraph","houstonusers/pipefittr","swarm-lab/editR","ropensci/tabulizerjars","ropensci/tabulizer","ThinkRstat/littleboxes","thomasp85/lime","thomasp85/tweenr","hrbrmstr/hrbrthemes","gabrielrvsc/HDeconometrics"))'
 RUN echo "install.packages('rJava', repos='http://www.rforge.net/', configure.args='--disable-Xrs')" | R --no-save \
 && R CMD javareconf
 RUN apt-get clean \
