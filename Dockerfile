@@ -12,6 +12,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libproj-dev \
   libv8-3.14-dev \
   libgsl0-dev \
+  openjdk-7-jre \
+  openjdk-7-jdk \
   && . /etc/environment
  
 RUN install2.r Amelia \
