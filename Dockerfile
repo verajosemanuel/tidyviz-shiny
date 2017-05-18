@@ -126,8 +126,7 @@ tmaptools \
 tseries \
 XML \
 xts \
-zoo \
-&& Rscript -e 'devtools::install_github(c("hadley/precis","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","drsimonj/twidlr","dyerlab/popgraph","houstonusers/pipefittr","swarm-lab/editR","ropensci/tabulizerjars","ropensci/tabulizer","thomasp85/lime","thomasp85/tweenr","hrbrmstr/hrbrthemes","gabrielrvsc/HDeconometrics"))'
+zoo 
 RUN echo "install.packages('rJava', repos='http://www.rforge.net/', configure.args='--disable-Xrs')" | R --no-save \
 && R CMD javareconf
 RUN apt-get clean \
