@@ -42,9 +42,11 @@ ggbeeswarm \
 ggforce \
 ggfortify \
 ggiraph \
+ggmap \
 ggraph \
 ggrepel \
 ggsci \
+gsubfn \
 ggThemeAssist \
 ggthemes \
 ggvis \
@@ -126,7 +128,7 @@ tmaptools \
 tseries \
 XML \
 xts \
-zoo 
-RUN apt-get clean \
+zoo \
+&& apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
