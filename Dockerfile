@@ -82,7 +82,11 @@ rio \
 riverplot \
 rmdformats \
 rticles \
+sas7bdat \
+lessR \
 scatterplot3d \
+sjmisc \
+sjPlot \
 stringdist \
 summarytools \
 tester \
