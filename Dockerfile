@@ -25,6 +25,7 @@ caret \
 chunked \
 cluster \
 colorspace \
+confinterpret \
 corrplot \
 data.table \
 desctable \
