@@ -14,7 +14,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libgsl0-dev \
   && . /etc/environment
  
-RUN install2.r Amelia \
+RUN install2.r tidyverse \
+Amelia \
 animation \
 anytime \
 assertive \
@@ -56,6 +57,7 @@ gmodels \
 gpclib \
 gridExtra \
 gtable \
+hexbin \
 highcharter \
 Hmisc \
 htmlwidgets \
@@ -79,6 +81,7 @@ psych \
 R.utils \
 RColorBrewer \
 Rcpp \
+revealjs \
 rio \
 riverplot \
 rmdformats \
