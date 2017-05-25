@@ -13,8 +13,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libv8-3.14-dev \
   libgsl0-dev \
   && . /etc/environment \  
-  && Rscript -e install.packages('devtools', repos='cran.rstudio.com')
- 
+  && R -e "install.packages('devtools')" 
+  
 RUN install2.r tidyverse \
 Amelia \
 animation \
@@ -31,7 +31,6 @@ confinterpret \
 corrplot \
 data.table \
 desctable \
-devtools \
 diffobj \
 DT \
 filesstrings \
