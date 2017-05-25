@@ -12,7 +12,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libproj-dev \
   libv8-3.14-dev \
   libgsl0-dev \
-  && . /etc/environment
+  && . /etc/environment \  
+  && -c "R -e \"install.packages('devtools', repos='cran.rstudio.com/')\""
  
 RUN install2.r tidyverse \
 Amelia \
