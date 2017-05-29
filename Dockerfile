@@ -38,6 +38,7 @@ filesstrings \
 flexdashboard \
 formattable \
 gbm \
+geosphere \
 gganimate \
 GGally \
 ggbeeswarm \
@@ -77,6 +78,7 @@ psych \
 R.utils \
 RColorBrewer \
 revealjs \
+RgoogleMaps \
 rio \
 riverplot \
 rmdformats \
