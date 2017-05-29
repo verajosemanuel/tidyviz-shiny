@@ -23,6 +23,10 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   && . /etc/environment
     
 RUN install2.r tidyverse \
+Amelia \
+animation \
+anytime \
+assertive \
 car \
 caret \
 colorspace \
@@ -44,10 +48,12 @@ ggmap \
 ggraph \
 ggrepel \
 ggsci \
+glmnet \
 gsubfn \
 ggThemeAssist \
 ggthemes \
 ggvis \
+glue \
 gmodels \
 gpclib \
 gridExtra \
