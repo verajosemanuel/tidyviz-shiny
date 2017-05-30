@@ -14,7 +14,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libgsl0-dev \
   libssl-dev \
   nano \
-  vim \
   openjdk-8-jdk \
   && R CMD javareconf \
   && sudo su - -c "R -e \"install.packages('devtools', repos='cran.rstudio.com/')\"" \
