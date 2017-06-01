@@ -33,6 +33,7 @@ corrplot \
 data.table \
 desctable \
 DT \
+d3Tree \
 filesstrings \
 flexdashboard \
 formattable \
@@ -67,6 +68,7 @@ huxtable \
 igraph \
 janitor \
 leaflet \
+leaflet.minicharts \
 leaps \
 magrittr \
 pathological \
