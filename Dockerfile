@@ -89,6 +89,7 @@ sjmisc \
 sjPlot \
 stringdist \
 summarytools \
+tidyquant \
 tufte \
 viridis \
 wordcloud \
