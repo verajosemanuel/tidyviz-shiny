@@ -20,9 +20,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   && sudo su - -c "R -e \"install.packages('devtools', repos='cran.rstudio.com/')\"" \
   && echo "install.packages('rJava', repos='http://www.rforge.net/', configure.args='--disable-Xrs')" | R --no-save \
   && R CMD javareconf \
-  && . /etc/environment
-    
-RUN install2.r tidyverse \
+  && . /etc/environment \
+&& install2.r tidyverse \
 Amelia \
 animation \
 anytime \
