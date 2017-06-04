@@ -32,6 +32,7 @@ colorspace \
 corrplot \
 data.table \
 desctable \
+cshapes \
 DT \
 d3Tree \
 filesstrings \
