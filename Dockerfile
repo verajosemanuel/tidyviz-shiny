@@ -95,6 +95,7 @@ sjPlot \
 stringdist \
 summarytools \
 tidyquant \
+tint \
 tufte \
 viridis \
 wordcloud \
