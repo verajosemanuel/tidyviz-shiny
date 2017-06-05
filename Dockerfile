@@ -78,12 +78,14 @@ plotrr \
 prettydoc \
 psych \
 R.utils \
+raster \
 RColorBrewer \
 revealjs \
 RgoogleMaps \
 rio \
 riverplot \
 rmdformats \
+rpart \
 rticles \
 sas7bdat \
 lessR \
