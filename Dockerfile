@@ -15,7 +15,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   vim \
   imagemagick \
   libmagick++-dev \
-  libcairo2-dev \
   libgdal-dev \
   libgeos-dev \
   libgeos++-dev \
@@ -25,7 +24,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   xfonts-base \
   libnlopt-dev \
   libgomp1 \
-  libicu-dev \
   libssl-dev \
   libpango1.0-dev \
   libpng-dev \
