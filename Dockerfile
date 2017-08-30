@@ -10,11 +10,29 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   libpq-dev \
   libudunits2-dev \
   libproj-dev \
-  libv8-3.14-dev \
   libgsl0-dev \
-  libssl-dev \
   nano \
   vim \
+  imagemagick \
+  libmagick++-dev \
+  libcairo2-dev \
+  libgdal-dev \
+  libgeos-dev \
+  libgeos++-dev \
+  libspatialite-dev \
+  libv8-3.14-dev \
+  libgtk2.0-dev \
+  xfonts-base \
+  libnlopt-dev \
+  libgomp1 \
+  libicu-dev \
+  libssl-dev \
+  libpango1.0-dev \
+  libpng-dev \
+  libtiff5-dev \
+  libjpeg62-turbo-dev \
+  r-cran-rgtk2 \
+  openjdk-8-jre \
   openjdk-8-jdk \
   && R CMD javareconf \
   && sudo su - -c "R -e \"install.packages('devtools', repos='cran.rstudio.com/')\"" \
@@ -112,7 +130,7 @@ rgdal \
 rms \
 rpg \
 sp \
-timekit \
+timetk \
 tmaptools \
 && Rscript -e 'devtools::install_github(c("drsimonj/twidlr","dyerlab/popgraph","houstonusers/pipefittr","swarm-lab/editR","ropensci/tabulizerjars","ropensci/tabulizer","ThinkRstat/littleboxes","thomasp85/lime","gabrielrvsc/HDeconometrics","RhoInc/CRANsearcher","hadley/precis","ropenscilabs/skimr","dgrtwo/gganimate","rstats-db/RPostgres","smach/rmiscutils","yihui/printr","hrbrmstr/hrbrthemes","thomasp85/tweenr","hafen/geofacet"))' \
 && apt-get clean \
