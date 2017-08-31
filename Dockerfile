@@ -33,6 +33,5 @@ CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 # CMD ["sh", "-c", "/usr/bin/shiny-server.sh;/init"]
 
 RUN apt-get clean \
->>>>>>> 5508483c00bcfa6f331b4c0261e7464b893fb7a4
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
