@@ -2,7 +2,6 @@ FROM jvera/tidyviz:latest
 
 LABEL maintainer "vera.josemanuel [AT] gmail dot com"
 
-
 RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt" && \
     VERSION=$(cat version.txt)  && \
     wget --no-verbose "https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/shiny-server-$VERSION-amd64.deb" -O shiny-server-latest.deb && \
@@ -34,5 +33,6 @@ CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 # CMD ["sh", "-c", "/usr/bin/shiny-server.sh;/init"]
 
 RUN apt-get clean \
+>>>>>>> 5508483c00bcfa6f331b4c0261e7464b893fb7a4
 && rm -rf /var/lib/apt/lists/ \
 && rm -rf /tmp/downloaded_packages/  /tmp/*.rds
