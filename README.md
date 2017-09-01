@@ -71,7 +71,9 @@ For shiny server, per user app is hosted http://<url>:3838/users/<username of rs
 Let’s try this, please login your rstudio at http://<url>:8787 now, then try to copy some example over to your home folder under ~/ShinyApps/
 
 dir.create("~/ShinyApps")
+
 file.copy("/usr/local/lib/R/site-library/shiny/examples/01_helloworld/", "~/ShinyApps/", recursive = TRUE)
+
 If you are login as username ‘rstudio’, then visit http://192.168.1.12:3838/rstudio/01_helloworld you should be able to see the hello example.
 
 Note: Generic shiny app can also be hosted http://<url>:3838/ or for particular app, http://<url>:3838/<app_dir> and inside the docker container, it’s hosted under /srv/shiny-server/
