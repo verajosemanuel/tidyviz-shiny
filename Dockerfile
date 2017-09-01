@@ -20,19 +20,12 @@ RUN cp -R /usr/local/lib/R/site-library/shiny/examples/* /home/rstudio/ShinyApps
 
 EXPOSE 3838 8787
 
-# COPY src/shiny-server.sh /usr/bin/shiny-server.sh
-# RUN wget --no-verbos https://raw.githubusercontent.com/sbg/sevenbridges-r/master/inst/docker/sevenbridges/src/shiny-server.conf -P /etc/shiny-server/
-# RUN wget --no-verbos https://raw.githubusercontent.com/sbg/sevenbridges-r/master/inst/docker/sevenbridges/src/supervisord.conf    -P /etc/shiny-server/
-COPY src/shiny-server.conf  /etc/shiny-server/shiny-server.conf
-COPY src/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+etc/shiny-server/
+COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
 
 ## set directory to `~/ShinyApps`
 # RUN yes | /opt/shiny-server/bin/deploy-example user-dirs
 # RUN cp -R /usr/local/lib/R/site-library/shiny/examples/* ~/ShinyApps/
-
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
-# CMD ["/init;/usr/bin/shiny-server.sh"]
-# CMD ["sh", "-c", "/usr/bin/shiny-server.sh;/init"]
 
 RUN apt-get clean \
 && rm -rf /var/lib/apt/lists/ \
