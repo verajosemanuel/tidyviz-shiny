@@ -2,7 +2,9 @@ FROM jvera/tidyviz:latest
 
 LABEL maintainer "vera.josemanuel [AT] gmail dot com"
 
-RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt" && \
+RUN apt-get update -qq && apt-get -y --no-install-recommends install \
+  gdebi \
+&& wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/VERSION -O "version.txt" && \
     VERSION=$(cat version.txt)  && \
     wget --no-verbose "https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubuntu-12.04/x86_64/shiny-server-$VERSION-amd64.deb" -O shiny-server-latest.deb && \
     gdebi -n shiny-server-latest.deb && \
