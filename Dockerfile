@@ -20,7 +20,6 @@ RUN cp -R /usr/local/lib/R/site-library/shiny/examples/* /home/rstudio/ShinyApps
 
 EXPOSE 3838 8787
 
-etc/shiny-server/
 COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
 
 ## set directory to `~/ShinyApps`
