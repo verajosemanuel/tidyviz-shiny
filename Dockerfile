@@ -2,8 +2,7 @@ FROM jvera/tidyviz:latest
 
 LABEL maintainer "vera.josemanuel [AT] gmail dot com"
 
-RUN apt-get update && apt-get install -y -t unstable \
-    sudo \
+RUN apt-get update && apt-get install -y sudo \
     gdebi-core \
     pandoc \
     pandoc-citeproc \
