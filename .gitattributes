@@ -2,5 +2,5 @@
 
 # Source files
 # ============
-*.css linguist-language=r
-*.html linguist-language=r
+*.conf linguist-language=r
+*.sh linguist-language=r
